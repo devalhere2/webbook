@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:  10vw;
+    padding-right: 10vw;
+    border-bottom: 2px solid violet;
+}
+
+.logoside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.submitside{
+    color: black;
+    font-size: 20px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}

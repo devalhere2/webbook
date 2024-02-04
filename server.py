@@ -10,7 +10,6 @@ def read_root():
         html_content = f.read()
     return html_content
 
-
 @app.get("/{page_name}", response_class=HTMLResponse)
 def serve_page(page_name: str):
     try:
@@ -19,3 +18,4 @@ def serve_page(page_name: str):
         return html_content
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Page not found")
+
